@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-map
+data:
+  db_host: example
+  db_user: example_user
+  db_database: example
+  db_port: '3306'
+
+  port: '5001'
+
