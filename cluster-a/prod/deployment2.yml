@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backoffice-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: backoffice-plus
+  template:
+    metadata:
+      labels:
+        component: backoffice-plus
+    spec:
+      containers:
+        - name: backoffice
+          image: switchsoftware/plus-backoffice
+          ports:
+            - containerPort: 80

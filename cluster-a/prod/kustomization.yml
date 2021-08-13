@@ -1,0 +1,18 @@
+#Le indicamos a kustomize cuales son los manifiesto que vamos a modificar
+resources:
+#Deployment ms #1
+- deployment1.yml
+#Deployment ms #2
+- deployment2.yml
+
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+#Cada uno de estos corresponderia al tag del ms a actualizar (ms api)
+- name: nginx
+  newName: nginx
+  newTag: '1.8'
+#Cada uno de estos corresponderia al tag del ms a actualizar (ms backoffice angular applications)
+- name: switchsoftware/plus-backoffice
+  newName: switchsoftware/plus-backoffice
+  newTag: 'exampleTag'
