@@ -4,6 +4,8 @@ resources:
 - deployment1.yml
 #Deployment ms #2
 - deployment2.yml
+- config-map.yml
+
 
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
