@@ -15,4 +15,4 @@ images:
 #Cada uno de estos corresponderia al tag del ms a actualizar (ms backoffice angular applications)
 - name: switchsoftware/plus-backoffice
   newName: switchsoftware/plus-backoffice
-  newTag: 'exampleTag'
+  newTag: 'latest'
