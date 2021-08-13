@@ -11,7 +11,7 @@ images:
 #Cada uno de estos corresponderia al tag del ms a actualizar (ms api)
 - name: nginx
   newName: nginx
-  newTag: '1.8'
+  newTag: '1.7.9'
 #Cada uno de estos corresponderia al tag del ms a actualizar (ms backoffice angular applications)
 - name: switchsoftware/plus-backoffice
   newName: switchsoftware/plus-backoffice
